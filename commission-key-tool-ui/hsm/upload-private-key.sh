@@ -1,0 +1,1 @@
+/opt/cprocsp/bin/amd64/csptest -keycopy -provsrc "Crypto-Pro GOST R 34.10-2012 KC2 CSP" -provdest "Crypto-Pro GOST R 34.10-2012 HSM CSP" -typesrc 80 -typedest 80 -contsrc $CONT_NAME -contdest $CONT_NAME -pinsrc 12345678 -pindest 12345678
