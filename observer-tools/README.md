@@ -20,7 +20,7 @@
 - Установите [https://www.docker.com/products/docker-desktop/](Docker)
 - Склонируйте этот репозиторий с утилитой наблюдателя (observer-tool)
 - Перейдите в корневую директорию утилиты
-- Скачайте библиотеку ```cpblindsig.zip``` [https://www.cryptopro.ru/sites/default/files/private/csp/50/tmp_delete/vote2024/cpblindsig.zip] и положите файл в корневую директорию утилиты наблюдателя
+- Скачайте библиотеку ```cpblindsig.zip``` и положите файл в корневую директорию утилиты наблюдателя
 - Скачайте пакет [КриптоПро CSP 5.0 R3 для Linux (x64, deb) - Astra Linux](https://www.cryptopro.ru/products/csp/downloads#latest_csp50r3_linux) и положите файл ```linux-amd64_deb.tgz``` в корневую директорию утилиты наблюдателя
 - Очистите cache перед следующим шагом командой <br> ```docker builder prune -a```
 - Соберите docker-образ, выполнив команду (точка в конце строки является частью команды):

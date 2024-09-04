@@ -71,7 +71,7 @@ import { getArgv } from './utils/get-argv'
         wrongZKP: [],
       }
 
-      const uncorrect: string[] = []
+      const incorrect: string[] = []
 
       for (const contractId of contractIds) {
         const tmpDir = await mkdtemp(`observer-tool-tmp-`)
@@ -104,11 +104,12 @@ import { getArgv } from './utils/get-argv'
               badTxs.wrongBlindSig.push(contractId)
             }
             if (!summary.correct) {
-              uncorrect.push(contractId)
+              incorrect.push(contractId)
             }
 
           }
         } catch (e) {
+          incorrect.push(contractId)
           logError(e)
         }
         rimraf.sync(tmpDir)
@@ -129,9 +130,9 @@ import { getArgv } from './utils/get-argv'
       log(`\n`)
 
       log(`Голосования:`)
-      log(`Результаты совпадают: ${contractIds.length - uncorrect.length}.`)
-      log(`Результаты не совпадают: ${uncorrect.length}.`)
-      logTxs(uncorrect)
+      log(`Результаты совпадают: ${contractIds.length - incorrect.length}.`)
+      log(`Результаты не совпадают: ${incorrect.length}.`)
+      logTxs(incorrect)
       log(`\n`)
 
       break
