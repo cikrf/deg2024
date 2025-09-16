@@ -17,7 +17,7 @@
 
 ## Установка
 
-- Установите [https://www.docker.com/products/docker-desktop/](Docker)
+- Установите [Docker](https://www.docker.com/products/docker-desktop/)
 - Склонируйте этот репозиторий с утилитой наблюдателя (observer-tool)
 - Перейдите в корневую директорию утилиты
 - Скачайте библиотеку ```cpblindsig.zip``` и положите файл в корневую директорию утилиты наблюдателя
